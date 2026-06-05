@@ -2,12 +2,6 @@
 
 **Research question:** What audio characteristics make a song likely to become a hit?
 
-We frame this as a binary classification problem on the Spotify 1M Tracks dataset:
-a track is a **hit** if its `popularity` is in the top 10% of all tracks. We compare
-four models — a majority-class baseline, logistic regression, random forest, and
-XGBoost — and ship an interactive demo where anyone can set a song's audio features
-and get a live prediction.
-
 This repo has two runnable pieces:
 1. **`song_hit_prediction.ipynb`** — the full analysis notebook (EDA, modeling, results).
 2. **`hit_predictor.py`** — a Streamlit web app demo.
@@ -103,7 +97,7 @@ Drag a slider and the hit prediction updates live.
 ### If `streamlit` is "not recognized"
 
 This happens when Streamlit's install folder isn't on your system PATH. Use the
-module form instead — it always works:
+module form instead as it always works:
 
 ```bash
 python -m streamlit run hit_predictor.py
@@ -130,16 +124,16 @@ C:\python311\python.exe -m streamlit run hit_predictor.py
 
 ## Troubleshooting
 
-**`NameError` or `ModuleNotFoundError` for a library** — a dependency didn't install
+**`NameError` or `ModuleNotFoundError` for a library** : A dependency didn't install
 or you're on a Python version without a compatible build (e.g. very new releases).
-Re-run `pip install -r requirements.txt`; if it persists, use Python 3.11 or 3.12.
+Re-run `pip install -r requirements.txt`. if it persists, use Python 3.11 or 3.12.
 
-**Kaggle authentication error on first download** — sign in via the link `kagglehub`
+**Kaggle authentication error on first download** : Sign in via the link `kagglehub`
 prints, or set up your `kaggle.json` API token, then rerun.
 
-**Streamlit shows a stale version after editing** — fully stop the app (Ctrl+C) and
+**Streamlit shows a stale version after editing** : Fully stop the app (Ctrl+C) and
 relaunch rather than just refreshing the browser; Streamlit caches the trained model
 in memory across reruns.
 
-**IMPORTANT** - make sure to have the necessary libraries and imports to ensure that both the 
+**IMPORTANT** : Make sure to have the necessary libraries and imports to ensure that both the 
 notebook and demo function as intended
