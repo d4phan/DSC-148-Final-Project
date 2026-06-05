@@ -2,12 +2,6 @@
 
 **Research question:** What audio characteristics make a song likely to become a hit?
 
-We frame this as a binary classification problem on the Spotify 1M Tracks dataset:
-a track is a **hit** if its `popularity` is in the top 10% of all tracks. We compare
-four models — a majority-class baseline, logistic regression, random forest, and
-XGBoost — and ship an interactive demo where anyone can set a song's audio features
-and get a live prediction.
-
 This repo has two runnable pieces:
 1. **`song_hit_prediction.ipynb`** — the full analysis notebook (EDA, modeling, results).
 2. **`hit_predictor.py`** — a Streamlit web app demo.
@@ -103,7 +97,7 @@ Drag a slider and the hit prediction updates live.
 ### If `streamlit` is "not recognized"
 
 This happens when Streamlit's install folder isn't on your system PATH. Use the
-module form instead — it always works:
+module form instead as it always works:
 
 ```bash
 python -m streamlit run hit_predictor.py
