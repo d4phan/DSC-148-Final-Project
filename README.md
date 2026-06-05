@@ -141,5 +141,5 @@ prints, or set up your `kaggle.json` API token, then rerun.
 relaunch rather than just refreshing the browser; Streamlit caches the trained model
 in memory across reruns.
 
-**IMPORTANT** - make sure to have the necesasry libraries and imports to ensure that both the 
+**IMPORTANT** - make sure to have the necessary libraries and imports to ensure that both the 
 notebook and demo function as intended
