@@ -3,7 +3,7 @@ DSC 148 Project — Working Demo
 Streamlit app: predicts whether a song is a "hit" (top 10% popularity)
 from its audio characteristics. Retrains XGBoost on launch (cached).
  
-Run with: streamlit run hit_predictor.py
+Run with: python -m streamlit run hit_predictor.py
 """
 
 import os
@@ -76,26 +76,6 @@ RATIO_FEATS = {"danceability", "energy", "speechiness", "acousticness",
  
 col1, col2, col3 = st.columns(3)
 user_input = {}
-
-SPOTIFY_GREEN = "#1DB954"
-
-st.markdown(f"""
-<style>
-/* the filled portion of the slider track */
-div[data-baseweb="slider"] div[role="progressbar"] {{
-    background: {SPOTIFY_GREEN} !important;
-}}
-/* the draggable thumb */
-div[data-baseweb="slider"] div[role="slider"] {{
-    background: {SPOTIFY_GREEN} !important;
-    border-color: {SPOTIFY_GREEN} !important;
-}}
-/* the value label/pill above the thumb */
-div[data-baseweb="slider"] [data-testid="stThumbValue"] {{
-    color: {SPOTIFY_GREEN} !important;
-}}
-</style>
-""", unsafe_allow_html=True)
 
 slider_layout = [
     ("danceability", col1), ("energy", col1), ("valence", col1),
