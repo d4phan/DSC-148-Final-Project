@@ -73,9 +73,6 @@ table_feature_means.csv       mean feature value by hit status
 metrics.json                  all metrics, machine-readable
 ```
 
-### Notebook structure 
-`1. Dataset` · `2. Predictive Task` · `3. Model` · `4. Literature` · `5. Results`.
-
 ---
 
 ## Part 2 — Running the Demo "hit_predictor.py"
