@@ -1,6 +1,6 @@
 # DSC 148 Final Project - A Machine Learning Approach to Hit Song Prediction 
 
-Daniel Phan
+Daniel Phan \
 Rachel Sakamoto
 
 **Research question:** What audio characteristics make a song likely to become a hit?
