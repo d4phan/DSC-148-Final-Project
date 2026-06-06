@@ -1,4 +1,4 @@
-# DSC 148 Final Project — Predicting Song Hits from Audio Characteristics
+# DSC 148 Final Project
 
 **Research question:** What audio characteristics make a song likely to become a hit?
 
